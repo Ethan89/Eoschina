@@ -39,11 +39,13 @@
             BlogDetail *blogDetail = [[BlogDetail alloc] init];
             blogDetail.view.backgroundColor = [UIColor whiteColor];
             blogDetail.title = @"资讯";
+            blogDetail.tabBarItem.title = @"资讯";
+            blogDetail.tabBarItem.image = [UIImage imageNamed:@"detail"];
             blogDetail.newsCategory = category;
             blogDetail.ids = [msg.attachMent intValue];
             
             newTab.viewControllers = [NSArray arrayWithObjects:blogDetail, nil];
-            //newTab.hidesBottomBarWhenPushed = YES;
+            newTab.hidesBottomBarWhenPushed = YES;
             
             [navigationController pushViewController:newTab animated:YES];
             
@@ -144,7 +146,10 @@
     
     SoftDetail *softDetail = [[SoftDetail alloc] init];
     softDetail.view.backgroundColor = [UIColor whiteColor];
-    softDetail.softwareName = ids ;
+    softDetail.tabBarItem.title = @"软件";
+    softDetail.tabBarItem.image = [UIImage imageNamed:@"detail"];
+    softDetail.softwareName = ids;
+    [softDetail viewDidAppear:YES];
     
     newTab.viewControllers = [NSArray arrayWithObjects:softDetail, nil];
     newTab.hidesBottomBarWhenPushed = YES;

@@ -40,6 +40,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //self.commentTableView.frame = CGRectMake(0,50,self.view.frame.size.width,self.view.frame.size.height-50);
+    self.commentTableView.contentInset = UIEdgeInsetsMake(65, 0, 50, 0);
+    //NSLog(@"tableview frame: %@", NSStringFromCGRect([self.commentTableView frame]));
+    //NSLog(@"view frame: %@", NSStringFromCGRect([self.view frame]));
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -80,7 +84,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    static NSString *tag = @"cell";
+    CommentCells *cell = [tableView dequeueReusableCellWithIdentifier:tag];
     
+    if(cell ==nil)
+    {
+        cell = [[CommentCells alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tag];
+    }
+    
+    CommentMsgDetails *msg = [commentArray objectAtIndex:[indexPath row]];
+    [cell setContent:msg];
+    
+    return cell;
+
 }
 
 - (void) loadContent {
@@ -89,12 +105,12 @@
         pageIndex = count;
         
         NSString *str = nil;
-        if(newsCategory ==5)
+        NSLog(@"#### newsCategory: %d",newsCategory);
+        if(newsCategory == 1)
         {
-            str = [NSString stringWithFormat:@"%@?id=%d&pageIndex=%d&pageSize=%d", api_blogcomment_list, self.parentID, pageIndex, 20];
-        }
-        else{
             str = [NSString stringWithFormat:@"%@catalog=%d&id=%@&pageIndex=%d&pageSize=%d",comments_detail,self.newsCategory,ids,count,20];
+        }else if (newsCategory == 2) {
+            str = [NSString stringWithFormat:@"%@?id=%d&pageIndex=%d&pageSize=%d", api_blogcomment_list, self.parentID, pageIndex, 20];
         }
         NSLog(@"%@", str);
         
@@ -127,9 +143,7 @@
     
     NSMutableArray *array = [XMLParser commentsDetailParser:msg];
     [commentArray addObjectsFromArray:array];
-    NSLog(@"aaaaa");
     [commentTableView reloadData];
-    NSLog(@"bbbbbb");
 }
 
 

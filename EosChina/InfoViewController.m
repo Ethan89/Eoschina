@@ -37,7 +37,7 @@
     
     self.infoTableView.dataSource = self;
     self.infoTableView.delegate = self;
-    
+    //self.infoTableView.contentInset = UIEdgeInsetsMake(0, 0, 50, 0);
     newsArray = [[NSMutableArray alloc] initWithCapacity:10];
     
     [self loadContent];
@@ -46,6 +46,21 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)categorySender:(id)sender {
+    UISegmentedControl* segmentedControl = (UISegmentedControl*)sender;
+    NSInteger selectedSegment = segmentedControl.selectedSegmentIndex;
+    
+    newCategory = (int)selectedSegment + 1;
+    
+    [self clear];
+    [self loadContent];
+}
+
+- (void)clear
+{
+    [newsArray removeAllObjects];
+    [infoTableView reloadData];
 }
 
 /*
@@ -71,6 +86,11 @@
     if (newCategory == 1) {
         str = [NSString stringWithFormat:@"%@catalog=%d&pageIndex=%d&pageSize=%d",
                new_url, 1, pageIndex, 20];
+        NSLog(@"%@",str);
+        NSLog(@"pageIndex : %d", pageIndex);
+    } else if (newCategory == 2 ){
+        str = [NSString stringWithFormat:@"%@type=latest&pageIndex=%d&pageSize=%d",
+               blog_url, pageIndex, 20];
         NSLog(@"%@",str);
         NSLog(@"pageIndex : %d", pageIndex);
     }
@@ -107,9 +127,15 @@
     msg = [[NSString alloc] initWithData:_datas encoding:NSUTF8StringEncoding];
     //NSLog(@"%@", msg);
     
-    NSMutableArray *array = [XMLParser newsParser:msg];
-    //newsArray = [XMLParser newsParser:msg];
-    [newsArray addObjectsFromArray:array];
+    if (newCategory == 1) {
+        NSMutableArray *array = [XMLParser newsParser:msg];
+        //newsArray = [XMLParser newsParser:msg];
+        [newsArray addObjectsFromArray:array];
+    } else if (newCategory  == 2) {
+        NSMutableArray *array = [XMLParser blogParser:msg];
+        [newsArray addObjectsFromArray:array];
+    }
+    
     
     [self.infoTableView reloadData];
     [self createTableFooter];

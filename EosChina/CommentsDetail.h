@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "MsgDetail.h"
 #import "XMLParser.h"
+#import "CommentCells.h"
+#import "CommentMsgDetails.h"
 
 @interface CommentsDetail : UITableViewController <UITableViewDataSource, UITableViewDelegate, NSURLConnectionDataDelegate>
 

@@ -31,4 +31,17 @@
     return msg;
 }
 
+- (id) initwithBlog:(NSString *)_titile author:(NSString *)_author ids:(NSString *)_ids pullDate:(NSString *)_pullDate url:(NSString *)_url
+{
+    MsgDetail *msg = [[MsgDetail alloc] init];
+    
+    msg.title = _titile;
+    msg.author = _author;
+    msg.ids = _ids;
+    msg.date = _pullDate;
+    msg.url = _url;
+    
+    return msg;
+}
+
 @end

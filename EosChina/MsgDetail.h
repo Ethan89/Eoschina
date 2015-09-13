@@ -21,4 +21,6 @@
 
 - (id) initWithContent:(NSString *)_title author:(NSString *)_author ids:(NSString *)_ids date:(NSString *)_date;
 
+- (id) initwithBlog:(NSString *)_titile author:(NSString *)_author ids:(NSString *)_ids pullDate:(NSString *)_pullDate url:(NSString *)_url;
+
 @end

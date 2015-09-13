@@ -31,7 +31,6 @@
     
     self.webView.delegate =self;
     
-    
     [self.view addSubview:webView];
 }
 
@@ -42,6 +41,9 @@
     if (newsCategory == 1) {
         str = [NSString stringWithFormat:@"%@id=%@",new_detail,ids];
         NSLog(@"**:%@", str);
+    } else if (newsCategory == 2) {
+        str = [NSString stringWithFormat:@"%@id=%@",blog_detail,ids];
+        NSLog(@"**: %@", str);
     }
     
     NSURL *url = [NSURL URLWithString:str];
@@ -61,7 +63,7 @@
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error  {
     
-    NSLog(@"aaa %@",[error localizedDescription]);
+    NSLog(@"aaa*** %@",[error localizedDescription]);
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -85,6 +87,12 @@
         }
         
         html = [NSString stringWithFormat:@"<body style='background-color:#EBEBF3'>%@<div id='oschina_title'>%@</div><div id='oschina_outline'>%@</div><hr/><div id='oschina_body'>%@</div>%@%@%@</body>",HTML_Style, singleNews.title,author_str, singleNews.body,software,[XMLParser generateRelativeNewsString:singleNews.relativies],HTML_Bottom];
+    } else if (newsCategory == 2) {
+        //NSLog(@"aaaaaaaa");
+        BlogDetailMsg *blogDetails = [XMLParser blogDetailParser:msg];
+        
+        NSString *author_str = [NSString stringWithFormat:@"<a href='http://my.oschina.net/u/%d'>%@</a>&nbsp;发表于&nbsp;%@",blogDetails.authorid, blogDetails.author,  [XMLParser intervalSinceNow:blogDetails.pubDate]];
+        html = [NSString stringWithFormat:@"<body style='background-color:#EBEBF3'>%@<div id='oschina_title'>%@</div><div id='oschina_outline'>%@</div><hr/><div id='oschina_body'>%@</div>%@</body>",HTML_Style, blogDetails.title,author_str,blogDetails.body,HTML_Bottom];
     }
     
     [self.webView loadHTMLString:html baseURL:nil];

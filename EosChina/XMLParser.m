@@ -67,6 +67,64 @@
     return newsArray;
 }
 
++ (NSMutableArray *) blogParser:(NSString *)response
+{
+    
+    NSMutableArray *newsArray = [[NSMutableArray alloc] initWithCapacity:10];
+    
+    TBXML *tbxml = [TBXML newTBXMLWithXMLString:response error:nil];
+    
+    if(tbxml!=nil)
+    {
+        TBXMLElement *root = tbxml.rootXMLElement;
+        
+        if(root!=nil)
+        {
+            TBXMLElement *childElement = [TBXML childElementNamed:@"blogs" parentElement:root];
+            
+            if(childElement!=nil)
+            {
+                
+                TBXMLElement *test = [TBXML childElementNamed:@"blog" parentElement:childElement];
+                
+                
+                while (test!=nil) {
+                    
+                    TBXMLElement *idElement = [TBXML childElementNamed:@"id" parentElement:test];
+                    NSString *ids = [TBXML textForElement:idElement];
+                    
+                    TBXMLElement *contentEle = [TBXML childElementNamed:@"title" parentElement:test];
+                    NSString *content = [TBXML textForElement:contentEle];
+                    
+                    TBXMLElement *authorEle = [TBXML childElementNamed:@"authorname" parentElement:test];
+                    NSString *author = [TBXML textForElement:authorEle];
+                    
+                    
+                    TBXMLElement *dateEle = [TBXML childElementNamed:@"pubDate" parentElement:test];
+                    NSString *pullData = [XMLParser intervalSinceNow:[TBXML textForElement:dateEle]];
+                    
+                    
+                    TBXMLElement *urlEle = [TBXML childElementNamed:@"url" parentElement:test];
+                    NSString *url = [TBXML textForElement:urlEle];
+                    
+                    
+                    MsgDetail *news = [[MsgDetail alloc] initwithBlog:content author:author ids:ids pullDate:pullData url:url];
+                    
+                    [newsArray addObject:news];
+                    
+                    test = [TBXML nextSiblingNamed:@"blog" searchFromElement:test];
+                }
+                
+            }
+            
+        }
+    }
+    
+    return newsArray;
+    
+    
+}
+
 + (SingleNews *) singleNewParser:(NSString *)response
 {
     SingleNews *singleNews ;
@@ -138,6 +196,32 @@
     
     
     return singleNews;
+    
+}
+
++ (BlogDetailMsg*) blogDetailParser:(NSString *)response
+{
+    TBXML *xml = [[TBXML alloc] initWithXMLString:response error:nil];
+    TBXMLElement *root = xml.rootXMLElement;
+    TBXMLElement *blog = [TBXML childElementNamed:@"blog" parentElement:root];
+    if (blog == nil) {
+        return nil;
+    }
+    TBXMLElement *_id = [TBXML childElementNamed:@"id" parentElement:blog];
+    TBXMLElement *title = [TBXML childElementNamed:@"title" parentElement:blog];
+    TBXMLElement *url = [TBXML childElementNamed:@"url" parentElement:blog];
+    TBXMLElement *where = [TBXML childElementNamed:@"where" parentElement:blog];
+    TBXMLElement *body = [TBXML childElementNamed:@"body" parentElement:blog];
+    TBXMLElement *author = [TBXML childElementNamed:@"author" parentElement:blog];
+    TBXMLElement *authorid = [TBXML childElementNamed:@"authorid" parentElement:blog];
+    TBXMLElement *documentType = [TBXML childElementNamed:@"documentType" parentElement:blog];
+    TBXMLElement *pubDate = [TBXML childElementNamed:@"pubDate" parentElement:blog];
+    TBXMLElement *fav = [TBXML childElementNamed:@"favorite" parentElement:blog];
+    TBXMLElement *commentCount = [TBXML childElementNamed:@"commentCount" parentElement:blog];
+    
+    
+    BlogDetailMsg *b = [[BlogDetailMsg alloc] initWithParameters:[[TBXML textForElement:_id] intValue] andTitle:[TBXML textForElement:title] andWhere:[TBXML textForElement:where] andBody:[TBXML textForElement:body] andAuthor:[TBXML textForElement:author] andAuthorid:[[TBXML textForElement:authorid] intValue] andDocumentType:[[TBXML textForElement:documentType] intValue] andPubDate:[TBXML textForElement:pubDate] andFavorite:[[TBXML textForElement:fav] intValue] == 1 andUrl:[TBXML textForElement:url] andCommentCount:[[TBXML textForElement:commentCount] intValue]];
+    return b;
     
 }
 

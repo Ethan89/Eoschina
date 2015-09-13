@@ -61,7 +61,7 @@
     NSLog(@"请求完成");
     NSString *msg;
     msg = [[NSString alloc] initWithData:soft_data encoding:NSUTF8StringEncoding];
-    NSLog(@"%@", msg);
+    //NSLog(@"%@", msg);
     
     TBXML* xml = [[TBXML alloc] initWithXMLString:msg error:nil];
     TBXMLElement* root = xml.rootXMLElement;
