@@ -11,6 +11,9 @@
 #import "XMLParser.h"
 
 @implementation NewsDetail
+{
+    id<TabBarProtocol> mydelegate;
+}
 
 @synthesize webView;
 @synthesize ids;
@@ -101,6 +104,14 @@
         return NO;
     }
     
+}
+
+- (void)barButtonClick {
+    NSLog(@"barButtonClick");
+}
+
+- (void)setMyDelegate:(id<TabBarProtocol>)delegate {
+    mydelegate = delegate;
 }
 
 @end

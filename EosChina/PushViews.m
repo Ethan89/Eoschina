@@ -14,23 +14,41 @@
     
     switch (msg.newType) {
         case 0:
+        {
             NSLog(@"pushNews");
             [self pushNews:navigationController andIds:msg.ids andCategory:category];
             break;
-            
+        }
         case 1:
+        {
             NSLog(@"pushSoft");
             [self pushSoft:navigationController andIds:msg.attachMent andCategory:0];
             break;
-            
+        }
         case 2:
+        {
             NSLog(@"pushQuestion");
             break;
-        
+        }
         case 3:
+        {
             NSLog(@"资讯");
-            break;
+            MyUITabBarController *newTab = [[MyUITabBarController alloc] init];
+            newTab.title = @"资讯详情";
             
+            BlogDetail *blogDetail = [[BlogDetail alloc] init];
+            blogDetail.view.backgroundColor = [UIColor whiteColor];
+            blogDetail.title = @"资讯";
+            blogDetail.newsCategory = category;
+            blogDetail.ids = [msg.attachMent intValue];
+            
+            newTab.viewControllers = [NSArray arrayWithObjects:blogDetail, nil];
+            //newTab.hidesBottomBarWhenPushed = YES;
+            
+            [navigationController pushViewController:newTab animated:YES];
+            
+            break;
+        }
         default:
             break;
     }
@@ -44,10 +62,26 @@
     NewsDetail* newsDetail = [[NewsDetail alloc] init];
     newsDetail.view.backgroundColor = [UIColor whiteColor];
     newsDetail.title = @"资讯";
+    newsDetail.tabBarItem.title = @"资讯";
+    newsDetail.tabBarItem.image = [UIImage imageNamed:@"detail"];
     newsDetail.ids = ids;
     newsDetail.newsCategory = category;
+    [newsDetail setMyDelegate:newsTab];
+    [newsDetail viewDidAppear:YES];
     
-    newsTab.viewControllers = [NSArray arrayWithObjects:newsDetail, nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    
+    CommentsDetail *commentsDetail = [storyboard instantiateViewControllerWithIdentifier:@"CommentsDetail"];
+    commentsDetail.tabBarItem.title = @"评论";
+    commentsDetail.view.backgroundColor = [UIColor whiteColor];
+    commentsDetail.tabBarItem.image = [UIImage imageNamed:@"commentlist"];
+    commentsDetail.newsCategory = category;
+    commentsDetail.ids = ids;
+
+    
+    newsTab.viewControllers = [NSArray arrayWithObjects:newsDetail, commentsDetail, nil];
+    newsTab.hidesBottomBarWhenPushed = YES;
+    
     [navigationController pushViewController:newsTab animated:YES];
 }
 
@@ -107,6 +141,13 @@
     
     MyUITabBarController *newTab = [[MyUITabBarController alloc] init];
     newTab.title = @"软件详情";
+    
+    SoftDetail *softDetail = [[SoftDetail alloc] init];
+    softDetail.view.backgroundColor = [UIColor whiteColor];
+    softDetail.softwareName = ids ;
+    
+    newTab.viewControllers = [NSArray arrayWithObjects:softDetail, nil];
+    newTab.hidesBottomBarWhenPushed = YES;
     
     [navigationController pushViewController:newTab animated:YES];
 }

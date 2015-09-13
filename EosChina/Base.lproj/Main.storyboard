@@ -18,7 +18,6 @@
                     <connections>
                         <segue destination="nd9-wc-AEP" kind="relationship" relationship="viewControllers" id="lfB-W8-I33"/>
                         <segue destination="Gzm-hR-fMQ" kind="relationship" relationship="viewControllers" id="dKS-oY-Sw4"/>
-                        <segue destination="C3D-rP-Um0" kind="relationship" relationship="viewControllers" id="gWM-k7-IaY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKb-fy-fy7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -137,51 +136,36 @@
             </objects>
             <point key="canvasLocation" x="399" y="320"/>
         </scene>
-        <!--Tweet View Controller-->
-        <scene sceneID="gLX-Oe-XdN">
+        <!--Comments Detail-->
+        <scene sceneID="4Fe-xL-fJF">
             <objects>
-                <tableViewController id="L2P-Sl-qNT" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kEL-Lm-yrx">
+                <tableViewController storyboardIdentifier="CommentsDetail" id="Afq-bA-10w" customClass="CommentsDetail" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hRO-SW-ysE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ijm-44-iFY">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="IaJ-AM-iLI">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ijm-44-iFY" id="m1d-Zq-LNU">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IaJ-AM-iLI" id="SPw-Jv-XYN">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="L2P-Sl-qNT" id="t2h-db-UDP"/>
-                            <outlet property="delegate" destination="L2P-Sl-qNT" id="Dkx-7T-WiE"/>
+                            <outlet property="dataSource" destination="Afq-bA-10w" id="swm-AN-z2m"/>
+                            <outlet property="delegate" destination="Afq-bA-10w" id="f87-5M-zP3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Tweet View Controller" id="C6j-7c-i4w"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Asj-IV-FVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="997" y="984"/>
-        </scene>
-        <!--动弹-->
-        <scene sceneID="Hq4-Fl-7xk">
-            <objects>
-                <navigationController id="C3D-rP-Um0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="动弹" image="tweet.png" id="nha-8P-jck"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jN7-Pr-IPZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
                     <connections>
-                        <segue destination="L2P-Sl-qNT" kind="relationship" relationship="rootViewController" id="IZu-FN-J30"/>
+                        <outlet property="commentTableView" destination="hRO-SW-ysE" id="RQB-Eg-l5h"/>
+                        <outlet property="tableView" destination="hRO-SW-ysE" id="hJD-El-ljA"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WXf-C0-pnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EuU-gx-vjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="399" y="984"/>
+            <point key="canvasLocation" x="399" y="1012"/>
         </scene>
         <!--综合-->
         <scene sceneID="KhX-5D-RdL">
@@ -205,6 +189,5 @@
     <resources>
         <image name="answer.png" width="30" height="30"/>
         <image name="info.png" width="30" height="30"/>
-        <image name="tweet.png" width="30" height="30"/>
     </resources>
 </document>

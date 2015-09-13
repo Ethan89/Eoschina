@@ -49,6 +49,11 @@
 		AA7BE7C21BA504AB00391D7C /* MyUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7BE7C11BA504AB00391D7C /* MyUITabBarController.m */; };
 		AA7BE7C51BA5083A00391D7C /* NewsDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7BE7C41BA5083A00391D7C /* NewsDetail.m */; };
 		AA7BE7C81BA510DB00391D7C /* SingleNews.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7BE7C71BA510DB00391D7C /* SingleNews.m */; };
+		AA7BE7CE1BA51BAC00391D7C /* SoftDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7BE7CD1BA51BAC00391D7C /* SoftDetail.m */; };
+		AA7BE7D11BA5225C00391D7C /* BlogDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7BE7D01BA5225C00391D7C /* BlogDetail.m */; };
+		AA7BE7D41BA5450F00391D7C /* CommentsDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7BE7D31BA5450F00391D7C /* CommentsDetail.m */; };
+		AA7BE7D71BA54D0E00391D7C /* CommentMsgDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7BE7D61BA54D0E00391D7C /* CommentMsgDetails.m */; };
+		AA7BE7DA1BA551D000391D7C /* CommentCells.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7BE7D91BA551D000391D7C /* CommentCells.m */; };
 		AA7C66191BA2C84A0031774E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7C66181BA2C84A0031774E /* main.m */; };
 		AA7C661C1BA2C84A0031774E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7C661B1BA2C84A0031774E /* AppDelegate.m */; };
 		AA7C661F1BA2C84A0031774E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7C661E1BA2C84A0031774E /* ViewController.m */; };
@@ -123,6 +128,16 @@
 		AA7BE7C41BA5083A00391D7C /* NewsDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetail.m; sourceTree = "<group>"; };
 		AA7BE7C61BA510DB00391D7C /* SingleNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleNews.h; sourceTree = "<group>"; };
 		AA7BE7C71BA510DB00391D7C /* SingleNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleNews.m; sourceTree = "<group>"; };
+		AA7BE7CC1BA51BAC00391D7C /* SoftDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftDetail.h; sourceTree = "<group>"; };
+		AA7BE7CD1BA51BAC00391D7C /* SoftDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftDetail.m; sourceTree = "<group>"; };
+		AA7BE7CF1BA5225C00391D7C /* BlogDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogDetail.h; sourceTree = "<group>"; };
+		AA7BE7D01BA5225C00391D7C /* BlogDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogDetail.m; sourceTree = "<group>"; };
+		AA7BE7D21BA5450F00391D7C /* CommentsDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsDetail.h; sourceTree = "<group>"; };
+		AA7BE7D31BA5450F00391D7C /* CommentsDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsDetail.m; sourceTree = "<group>"; };
+		AA7BE7D51BA54D0E00391D7C /* CommentMsgDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentMsgDetails.h; sourceTree = "<group>"; };
+		AA7BE7D61BA54D0E00391D7C /* CommentMsgDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentMsgDetails.m; sourceTree = "<group>"; };
+		AA7BE7D81BA551D000391D7C /* CommentCells.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentCells.h; sourceTree = "<group>"; };
+		AA7BE7D91BA551D000391D7C /* CommentCells.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentCells.m; sourceTree = "<group>"; };
 		AA7C66131BA2C84A0031774E /* EosChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EosChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7C66171BA2C84A0031774E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA7C66181BA2C84A0031774E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -196,12 +211,20 @@
 		AA3B214E1BA30890002856E0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AA7BE7CF1BA5225C00391D7C /* BlogDetail.h */,
+				AA7BE7D01BA5225C00391D7C /* BlogDetail.m */,
 				AA3B214F1BA308FC002856E0 /* InfoViewController.h */,
 				AA3B21501BA308FC002856E0 /* InfoViewController.m */,
 				AA7BE7C01BA504AB00391D7C /* MyUITabBarController.h */,
 				AA7BE7C11BA504AB00391D7C /* MyUITabBarController.m */,
 				AA7BE7C31BA5083A00391D7C /* NewsDetail.h */,
 				AA7BE7C41BA5083A00391D7C /* NewsDetail.m */,
+				AA7BE7CC1BA51BAC00391D7C /* SoftDetail.h */,
+				AA7BE7CD1BA51BAC00391D7C /* SoftDetail.m */,
+				AA7BE7D21BA5450F00391D7C /* CommentsDetail.h */,
+				AA7BE7D31BA5450F00391D7C /* CommentsDetail.m */,
+				AA7BE7D81BA551D000391D7C /* CommentCells.h */,
+				AA7BE7D91BA551D000391D7C /* CommentCells.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -246,6 +269,8 @@
 				AA7BE7BD1BA4FEDB00391D7C /* PushViews.m */,
 				AA7BE7C61BA510DB00391D7C /* SingleNews.h */,
 				AA7BE7C71BA510DB00391D7C /* SingleNews.m */,
+				AA7BE7D51BA54D0E00391D7C /* CommentMsgDetails.h */,
+				AA7BE7D61BA54D0E00391D7C /* CommentMsgDetails.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -455,10 +480,15 @@
 				AA7C661C1BA2C84A0031774E /* AppDelegate.m in Sources */,
 				AA7BE7BE1BA4FEDB00391D7C /* PushViews.m in Sources */,
 				AA7BE7C21BA504AB00391D7C /* MyUITabBarController.m in Sources */,
+				AA7BE7D41BA5450F00391D7C /* CommentsDetail.m in Sources */,
+				AA7BE7CE1BA51BAC00391D7C /* SoftDetail.m in Sources */,
 				AA7BE7C51BA5083A00391D7C /* NewsDetail.m in Sources */,
+				AA7BE7D71BA54D0E00391D7C /* CommentMsgDetails.m in Sources */,
 				AA7BE7C81BA510DB00391D7C /* SingleNews.m in Sources */,
+				AA7BE7DA1BA551D000391D7C /* CommentCells.m in Sources */,
 				AA3B214D1BA30737002856E0 /* prefix_define.h in Sources */,
 				AA3B21511BA308FC002856E0 /* InfoViewController.m in Sources */,
+				AA7BE7D11BA5225C00391D7C /* BlogDetail.m in Sources */,
 				AA6B34D41BA3DE9A006A5741 /* TBXML+HTTP.m in Sources */,
 				AA6B34DD1BA3F863006A5741 /* MsgDetail.m in Sources */,
 				AA6B34D31BA3DE9A006A5741 /* TBXML+Compression.m in Sources */,

@@ -8,11 +8,14 @@
 
 #import "TBXML.h"
 #import "SingleNews.h"
+#import "CommentMsgDetails.h"
 
 @interface XMLParser : NSObject
 
 + (NSMutableArray *)newsParser:(NSString *) response;
 + (SingleNews *) singleNewParser:(NSString *)response;
 + (NSString *)generateRelativeNewsString:(NSArray *)array;
++ (NSString *)intervalSinceNow: (NSString *) theDate;
++ (NSMutableArray*) commentsDetailParser:(NSString *)response;
 
 @end

@@ -11,7 +11,7 @@
 
 @protocol ViewProtocol <NSObject>
 
-- (void) barButttonClick;
+- (void) barButtonClick;
 
 @end
 

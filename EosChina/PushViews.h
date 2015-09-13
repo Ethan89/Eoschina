@@ -10,6 +10,9 @@
 #import <UIKit/UIKit.h>
 #import "MsgDetail.h"
 #import "NewsDetail.h"
+#import "SoftDetail.h"
+#import "BlogDetail.h"
+#import "CommentsDetail.h"
 #import "MyUITabBarController.h"
 
 @interface PushViews : NSObject
