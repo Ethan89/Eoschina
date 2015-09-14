@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InfoViewController : UITableViewController <NSURLConnectionDataDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface InfoViewController : UITableViewController <NSURLConnectionDataDelegate>
 
 @property int pageIndex;
 @property (nonatomic, strong) NSMutableData *datas;

@@ -10,14 +10,20 @@
 
 @implementation QuestionCell
 
-- (void)awakeFromNib {
-    // Initialization code
-}
+@synthesize tag;
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)setContent:(QuestionMsg *)msg {
+    
+    if (self) {
+        self.avatorView.imageURL = [NSURL URLWithString:msg.portrait];
+        self.titleLabel.text = msg.title;
+        self.answerTitle.text = @"回帖";
+        self.answerCount.text = msg.answerCount;
+        
+        NSString *time = [XMLParser intervalSinceNow:msg.pubDate];
+        
+        self.authorLabel.text = [NSString stringWithFormat:@"%@        %@",msg.author,time ];
+    }
 }
 
 @end

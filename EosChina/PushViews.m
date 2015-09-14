@@ -28,6 +28,7 @@
         case 2:
         {
             NSLog(@"pushQuestion");
+            [self pushQuestion:navigationController andIds:msg.ids andCategory:2];
             break;
         }
         case 3:
@@ -154,6 +155,33 @@
     newTab.viewControllers = [NSArray arrayWithObjects:softDetail, nil];
     newTab.hidesBottomBarWhenPushed = YES;
     
+    [navigationController pushViewController:newTab animated:YES];
+}
+
++ (void)pushQuestion:(UINavigationController *)navigationController andIds:(NSString *)ids andCategory:(int)category {
+    
+    MyUITabBarController *newTab = [[MyUITabBarController alloc] init];
+    newTab.title = @"问答详情";
+    
+    PostDetail *postDetail = [[PostDetail alloc] init];
+    postDetail.view.backgroundColor = [UIColor whiteColor];
+    postDetail.tabBarItem.title = @"详情";
+    postDetail.tabBarItem.image = [UIImage imageNamed:@"detail"];
+    postDetail.ids = ids ;
+    [postDetail viewDidAppear:YES];
+    
+    UIStoryboard *stroboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    
+    CommentsDetail *commentDetail = [stroboard instantiateViewControllerWithIdentifier:@"CommentsDetail"];
+    commentDetail.view.backgroundColor = [UIColor whiteColor];
+    commentDetail.tabBarItem.image = [UIImage imageNamed:@"commentlist"];
+    commentDetail.tabBarItem.title = @"评论";
+    commentDetail.ids = ids;
+    commentDetail.newsCategory = category;
+    //NSLog(@"aaa %d",category);
+    
+    newTab.viewControllers = [NSArray arrayWithObjects:postDetail,commentDetail, nil];
+    newTab.hidesBottomBarWhenPushed = YES;
     [navigationController pushViewController:newTab animated:YES];
 }
 

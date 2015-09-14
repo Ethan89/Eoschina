@@ -13,6 +13,7 @@
 #import "SoftDetail.h"
 #import "BlogDetail.h"
 #import "CommentsDetail.h"
+#import "PostDetail.h"
 #import "MyUITabBarController.h"
 
 @interface PushViews : NSObject
@@ -20,6 +21,8 @@
 + (void)pushNewsDetailView:(UINavigationController *)navigationController andMsg:(MsgDetail *)msg andCategory:(int)category;
 
 + (void)pushNews:(UINavigationController *)navigationController andIds:(NSString *)ids andCategory:(int)category;
+
++ (void)pushQuestion:(UINavigationController *)navigationController andIds:(NSString*)ids andCategory:(int)category;
 
 + (void)pushSoft:(UINavigationController *)navigationController andIds:(NSString*)ids andCategory:(int)category;
 

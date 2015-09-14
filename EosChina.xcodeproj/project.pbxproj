@@ -61,8 +61,12 @@
 		AA7C66241BA2C84A0031774E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7C66231BA2C84A0031774E /* Images.xcassets */; };
 		AA7C66271BA2C84A0031774E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7C66251BA2C84A0031774E /* LaunchScreen.xib */; };
 		AA7C66331BA2C84A0031774E /* EosChinaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7C66321BA2C84A0031774E /* EosChinaTests.m */; };
+		AA95ACF01BA65206009DD621 /* PostDetailMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = AA95ACEF1BA65206009DD621 /* PostDetailMsg.m */; };
+		AA95ACF31BA6528C009DD621 /* PostDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = AA95ACF21BA6528C009DD621 /* PostDetail.m */; };
 		AAB61B4F1BA56C0F000C68D0 /* BlogDetailMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB61B4E1BA56C0F000C68D0 /* BlogDetailMsg.m */; };
 		AAB61B521BA5A2B9000C68D0 /* QuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB61B511BA5A2B9000C68D0 /* QuestionCell.m */; };
+		AAB61B551BA5A4E7000C68D0 /* QuestionMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB61B541BA5A4E7000C68D0 /* QuestionMsg.m */; };
+		AAB61B5B1BA5A90D000C68D0 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB61B5A1BA5A90D000C68D0 /* QuestionViewController.m */; };
 		D609375D099492B4D3A3724B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1007184790D7913C1FCCA6D1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -156,10 +160,18 @@
 		AA7C662C1BA2C84A0031774E /* EosChinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EosChinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7C66311BA2C84A0031774E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA7C66321BA2C84A0031774E /* EosChinaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EosChinaTests.m; sourceTree = "<group>"; };
+		AA95ACEE1BA65206009DD621 /* PostDetailMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostDetailMsg.h; sourceTree = "<group>"; };
+		AA95ACEF1BA65206009DD621 /* PostDetailMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostDetailMsg.m; sourceTree = "<group>"; };
+		AA95ACF11BA6528C009DD621 /* PostDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostDetail.h; sourceTree = "<group>"; };
+		AA95ACF21BA6528C009DD621 /* PostDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostDetail.m; sourceTree = "<group>"; };
 		AAB61B4D1BA56C0F000C68D0 /* BlogDetailMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogDetailMsg.h; sourceTree = "<group>"; };
 		AAB61B4E1BA56C0F000C68D0 /* BlogDetailMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogDetailMsg.m; sourceTree = "<group>"; };
 		AAB61B501BA5A2B9000C68D0 /* QuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionCell.h; sourceTree = "<group>"; };
 		AAB61B511BA5A2B9000C68D0 /* QuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionCell.m; sourceTree = "<group>"; };
+		AAB61B531BA5A4E7000C68D0 /* QuestionMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionMsg.h; sourceTree = "<group>"; };
+		AAB61B541BA5A4E7000C68D0 /* QuestionMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionMsg.m; sourceTree = "<group>"; };
+		AAB61B591BA5A90D000C68D0 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		AAB61B5A1BA5A90D000C68D0 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		C7E6804EDCA3D9BE0E26E2A3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -246,6 +258,10 @@
 				AA7BE7D91BA551D000391D7C /* CommentCells.m */,
 				AAB61B501BA5A2B9000C68D0 /* QuestionCell.h */,
 				AAB61B511BA5A2B9000C68D0 /* QuestionCell.m */,
+				AAB61B591BA5A90D000C68D0 /* QuestionViewController.h */,
+				AAB61B5A1BA5A90D000C68D0 /* QuestionViewController.m */,
+				AA95ACF11BA6528C009DD621 /* PostDetail.h */,
+				AA95ACF21BA6528C009DD621 /* PostDetail.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -294,6 +310,10 @@
 				AA7BE7D61BA54D0E00391D7C /* CommentMsgDetails.m */,
 				AAB61B4D1BA56C0F000C68D0 /* BlogDetailMsg.h */,
 				AAB61B4E1BA56C0F000C68D0 /* BlogDetailMsg.m */,
+				AAB61B531BA5A4E7000C68D0 /* QuestionMsg.h */,
+				AAB61B541BA5A4E7000C68D0 /* QuestionMsg.m */,
+				AA95ACEE1BA65206009DD621 /* PostDetailMsg.h */,
+				AA95ACEF1BA65206009DD621 /* PostDetailMsg.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -545,10 +565,13 @@
 			files = (
 				AA7C661F1BA2C84A0031774E /* ViewController.m in Sources */,
 				AA6B34E01BA41891006A5741 /* MsgCell.m in Sources */,
+				AAB61B5B1BA5A90D000C68D0 /* QuestionViewController.m in Sources */,
+				AA95ACF01BA65206009DD621 /* PostDetailMsg.m in Sources */,
 				AA6B34D51BA3DE9A006A5741 /* TBXML.m in Sources */,
 				AA7C661C1BA2C84A0031774E /* AppDelegate.m in Sources */,
 				AA7BE7BE1BA4FEDB00391D7C /* PushViews.m in Sources */,
 				AA7BE7C21BA504AB00391D7C /* MyUITabBarController.m in Sources */,
+				AA95ACF31BA6528C009DD621 /* PostDetail.m in Sources */,
 				AA7BE7D41BA5450F00391D7C /* CommentsDetail.m in Sources */,
 				AA7BE7CE1BA51BAC00391D7C /* SoftDetail.m in Sources */,
 				AA7BE7C51BA5083A00391D7C /* NewsDetail.m in Sources */,
@@ -561,6 +584,7 @@
 				AA6B34D41BA3DE9A006A5741 /* TBXML+HTTP.m in Sources */,
 				AA6B34DD1BA3F863006A5741 /* MsgDetail.m in Sources */,
 				AAB61B521BA5A2B9000C68D0 /* QuestionCell.m in Sources */,
+				AAB61B551BA5A4E7000C68D0 /* QuestionMsg.m in Sources */,
 				AA6B34D31BA3DE9A006A5741 /* TBXML+Compression.m in Sources */,
 				AA6B34D91BA3E36C006A5741 /* XMLParser.m in Sources */,
 				AA7C66191BA2C84A0031774E /* main.m in Sources */,

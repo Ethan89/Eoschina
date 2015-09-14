@@ -106,12 +106,23 @@
         
         NSString *str = nil;
         NSLog(@"#### newsCategory: %d",newsCategory);
+        /*
         if(newsCategory == 1)
         {
             str = [NSString stringWithFormat:@"%@catalog=%d&id=%@&pageIndex=%d&pageSize=%d",comments_detail,self.newsCategory,ids,count,20];
         }else if (newsCategory == 2) {
             str = [NSString stringWithFormat:@"%@?id=%d&pageIndex=%d&pageSize=%d", api_blogcomment_list, self.parentID, pageIndex, 20];
         }
+         */
+        
+        if(newsCategory ==5)
+        {
+            str = [NSString stringWithFormat:@"%@?id=%d&pageIndex=%d&pageSize=%d", api_blogcomment_list, self.parentID, pageIndex, 20];
+        }
+        else{
+            str = [NSString stringWithFormat:@"%@catalog=%d&id=%@&pageIndex=%d&pageSize=%d",comments_detail,self.newsCategory,ids,count,20];
+        }
+        
         NSLog(@"%@", str);
         
         NSURL *url = [NSURL URLWithString:str];

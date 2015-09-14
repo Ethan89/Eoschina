@@ -121,8 +121,55 @@
     }
     
     return newsArray;
+}
+
++ (NSMutableArray *) questionNewParser:(NSString *)response
+{
+    NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:2];
     
     
+    TBXML *xml = [[TBXML alloc] initWithXMLString:response error:nil];
+    TBXMLElement *root = xml.rootXMLElement;
+    TBXMLElement *blog = [TBXML childElementNamed:@"posts" parentElement:root];
+    if (blog == nil) {
+        return nil;
+    }
+    
+    TBXMLElement *first = [TBXML childElementNamed:@"post" parentElement:blog];
+    
+    while (first!=nil) {
+        
+        TBXMLElement *_id = [TBXML childElementNamed:@"id" parentElement:first];
+        TBXMLElement *_portrait = [TBXML childElementNamed:@"portrait" parentElement:first];
+        TBXMLElement *_author = [TBXML childElementNamed:@"author" parentElement:first];
+        TBXMLElement *_authorid = [TBXML childElementNamed:@"authorid" parentElement:first];
+        TBXMLElement *_title = [TBXML childElementNamed:@"title" parentElement:first];
+        TBXMLElement *_answerCount = [TBXML childElementNamed:@"answerCount" parentElement:first];
+        TBXMLElement *_viewCount = [TBXML childElementNamed:@"viewCount" parentElement:first];
+        TBXMLElement *_pubDate = [TBXML childElementNamed:@"pubDate" parentElement:first];
+        TBXMLElement *_answer = [TBXML childElementNamed:@"answer" parentElement:first];
+        TBXMLElement *_name = nil;
+        if(_answer!=nil)
+        {
+            _name = [TBXML childElementNamed:@"name" parentElement:_answer];
+        }
+        
+        
+        QuestionMsg *msg = [[QuestionMsg alloc] initWithContent:[TBXML textForElement:_id] andPortrait:[TBXML textForElement:_portrait] andAuthor:[TBXML textForElement:_author] andAuthorid:[TBXML textForElement:_authorid] andTitle:[TBXML textForElement:_title] andAnswerCount:[TBXML textForElement:_answerCount] andViewCount:[TBXML textForElement:_viewCount] andPubDate:[TBXML textForElement:_pubDate] andName:nil];
+        
+        if(_name!=nil)
+        {
+            msg.name = [TBXML textForElement:_name];
+        }
+        
+        [array addObject:msg];
+        
+        first = [TBXML nextSiblingNamed:@"post" searchFromElement:first];
+    }
+    
+    
+    
+    return array;
 }
 
 + (SingleNews *) singleNewParser:(NSString *)response
@@ -350,6 +397,49 @@
     
     
     return commentArray;
+}
+
++ (PostDetailMsg *) postNewParser:(NSString *)response
+{
+    TBXML *xml = [[TBXML alloc] initWithXMLString:response error:nil];
+    TBXMLElement *root = xml.rootXMLElement;
+    TBXMLElement *post = [TBXML childElementNamed:@"post" parentElement:root];
+    if (post == nil) {
+        return nil;
+    }
+    TBXMLElement *_id = [TBXML childElementNamed:@"id" parentElement:post];
+    TBXMLElement *title = [TBXML childElementNamed:@"title" parentElement:post];
+    TBXMLElement *url = [TBXML childElementNamed:@"url" parentElement:post];
+    TBXMLElement *portrait = [TBXML childElementNamed:@"portrait" parentElement:post];
+    TBXMLElement *body = [TBXML childElementNamed:@"body" parentElement:post];
+    TBXMLElement *author = [TBXML childElementNamed:@"author" parentElement:post];
+    TBXMLElement *authorid = [TBXML childElementNamed:@"authorid" parentElement:post];
+    TBXMLElement *answerCount = [TBXML childElementNamed:@"answerCount" parentElement:post];
+    TBXMLElement *viewCount = [TBXML childElementNamed:@"viewCount" parentElement:post];
+    TBXMLElement *pubDate = [TBXML childElementNamed:@"pubDate" parentElement:post];
+    TBXMLElement *fav = [TBXML childElementNamed:@"favorite" parentElement:post];
+    
+    NSMutableArray *_tags = [[NSMutableArray alloc] initWithCapacity:0];
+    TBXMLElement *tags = [TBXML childElementNamed:@"tags" parentElement:post];
+    if (tags != nil) {
+        TBXMLElement *tag = [TBXML childElementNamed:@"tag" parentElement:tags];
+        if (tag != nil) {
+            [_tags addObject:[TBXML textForElement:tag]];
+            while (tag != nil) {
+                tag = [TBXML nextSiblingNamed:@"tag" searchFromElement:tag];
+                if (tag != nil) {
+                    [_tags addObject:[TBXML textForElement:tag]];
+                }
+                else
+                    break;
+            }
+        }
+    }
+    
+    PostDetailMsg *msg = [[PostDetailMsg alloc] initWithContent:[TBXML textForElement:_id] andTitle:[TBXML textForElement:title] andUrl:[TBXML textForElement:url] andPortrait:[TBXML textForElement:portrait] andBody:[TBXML textForElement:body] andAuthor:[TBXML textForElement:author] andAuthorID:[TBXML textForElement:authorid] andAnswer:[TBXML textForElement:answerCount] andView:[TBXML textForElement:viewCount] andPubDate:[TBXML textForElement:pubDate] andFavorite:[TBXML textForElement:fav] andTags:_tags];
+    
+    
+    return msg;
 }
 
 @end
