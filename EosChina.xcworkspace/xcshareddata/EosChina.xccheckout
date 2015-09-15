@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4A1F9201-6531-4398-BC3D-F7EA7AF833BA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EosChina</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1E81F2D2248EFA380C67EF97B2001A53F3B1A543</key>
+		<string>personal.github.com:Ethan89/Eoschina.git</string>
+		<key>D33C95C0A843CCBB42C08B5806EBF028432E18CD</key>
+		<string>https://github.com/71squared/TBXML.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EosChina.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1E81F2D2248EFA380C67EF97B2001A53F3B1A543</key>
+		<string>..</string>
+		<key>D33C95C0A843CCBB42C08B5806EBF028432E18CD</key>
+		<string>../../library/TBXML</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>personal.github.com:Ethan89/Eoschina.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1E81F2D2248EFA380C67EF97B2001A53F3B1A543</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1E81F2D2248EFA380C67EF97B2001A53F3B1A543</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EosChina</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D33C95C0A843CCBB42C08B5806EBF028432E18CD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TBXML</string>
+		</dict>
+	</array>
+</dict>
+</plist>
