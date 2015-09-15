@@ -16,7 +16,7 @@
     
     NSMutableArray *newsArray = [[NSMutableArray alloc] initWithCapacity:10];
     
-    TBXML *tbxml = [TBXML newTBXMLWithXMLString:response error:nil];
+    TBXML *tbxml = [TBXML tbxmlWithXMLString:response error:nil];
     
     if (tbxml != nil) {
         TBXMLElement *root = tbxml.rootXMLElement;
@@ -72,7 +72,7 @@
     
     NSMutableArray *newsArray = [[NSMutableArray alloc] initWithCapacity:10];
     
-    TBXML *tbxml = [TBXML newTBXMLWithXMLString:response error:nil];
+    TBXML *tbxml = [TBXML tbxmlWithXMLString:response error:nil];
     
     if(tbxml!=nil)
     {
@@ -178,8 +178,7 @@
     
     NSMutableArray *relativeArray = [[NSMutableArray alloc] init];
     
-    
-    TBXML *tbxml = [TBXML newTBXMLWithXMLString:response error:nil];
+    TBXML *tbxml = [TBXML tbxmlWithXMLString:response error:nil];
     
     if(tbxml!=nil)
     {

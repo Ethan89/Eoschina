@@ -39,9 +39,6 @@
 		AA3B214D1BA30737002856E0 /* prefix_define.h in Sources */ = {isa = PBXBuildFile; fileRef = AA3B214C1BA30737002856E0 /* prefix_define.h */; };
 		AA3B21511BA308FC002856E0 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3B21501BA308FC002856E0 /* InfoViewController.m */; };
 		AA6B34CA1BA3DE71006A5741 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6B34C91BA3DE71006A5741 /* libz.dylib */; };
-		AA6B34D31BA3DE9A006A5741 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6B34D01BA3DE9A006A5741 /* TBXML+Compression.m */; };
-		AA6B34D41BA3DE9A006A5741 /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6B34D11BA3DE9A006A5741 /* TBXML+HTTP.m */; };
-		AA6B34D51BA3DE9A006A5741 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6B34D21BA3DE9A006A5741 /* TBXML.m */; };
 		AA6B34D91BA3E36C006A5741 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6B34D81BA3E36C006A5741 /* XMLParser.m */; };
 		AA6B34DD1BA3F863006A5741 /* MsgDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6B34DC1BA3F863006A5741 /* MsgDetail.m */; };
 		AA6B34E01BA41891006A5741 /* MsgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6B34DF1BA41891006A5741 /* MsgCell.m */; };
@@ -116,12 +113,6 @@
 		AA3B214F1BA308FC002856E0 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		AA3B21501BA308FC002856E0 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		AA6B34C91BA3DE71006A5741 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		AA6B34CC1BA3DE91006A5741 /* TBXML+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+Compression.h"; sourceTree = "<group>"; };
-		AA6B34CD1BA3DE91006A5741 /* TBXML+HTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+HTTP.h"; sourceTree = "<group>"; };
-		AA6B34CE1BA3DE91006A5741 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
-		AA6B34D01BA3DE9A006A5741 /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+Compression.m"; sourceTree = "<group>"; };
-		AA6B34D11BA3DE9A006A5741 /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+HTTP.m"; sourceTree = "<group>"; };
-		AA6B34D21BA3DE9A006A5741 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
 		AA6B34D71BA3E36C006A5741 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
 		AA6B34D81BA3E36C006A5741 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
 		AA6B34DB1BA3F863006A5741 /* MsgDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgDetail.h; sourceTree = "<group>"; };
@@ -266,28 +257,6 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
-		AA6B34CB1BA3DE91006A5741 /* TBXML-Headers */ = {
-			isa = PBXGroup;
-			children = (
-				AA6B34CC1BA3DE91006A5741 /* TBXML+Compression.h */,
-				AA6B34CD1BA3DE91006A5741 /* TBXML+HTTP.h */,
-				AA6B34CE1BA3DE91006A5741 /* TBXML.h */,
-			);
-			name = "TBXML-Headers";
-			path = "../../library/TBXML/TBXML-Headers";
-			sourceTree = "<group>";
-		};
-		AA6B34CF1BA3DE9A006A5741 /* TBXML-Code */ = {
-			isa = PBXGroup;
-			children = (
-				AA6B34D01BA3DE9A006A5741 /* TBXML+Compression.m */,
-				AA6B34D11BA3DE9A006A5741 /* TBXML+HTTP.m */,
-				AA6B34D21BA3DE9A006A5741 /* TBXML.m */,
-			);
-			name = "TBXML-Code";
-			path = "../../library/TBXML/TBXML-Code";
-			sourceTree = "<group>";
-		};
 		AA6B34D61BA3E346006A5741 /* XMLParser */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,8 +311,6 @@
 		AA7C66151BA2C84A0031774E /* EosChina */ = {
 			isa = PBXGroup;
 			children = (
-				AA6B34CF1BA3DE9A006A5741 /* TBXML-Code */,
-				AA6B34CB1BA3DE91006A5741 /* TBXML-Headers */,
 				AA3B21111BA304F6002856E0 /* images */,
 				AA7C661A1BA2C84A0031774E /* AppDelegate.h */,
 				AA7C661B1BA2C84A0031774E /* AppDelegate.m */,
@@ -567,7 +534,6 @@
 				AA6B34E01BA41891006A5741 /* MsgCell.m in Sources */,
 				AAB61B5B1BA5A90D000C68D0 /* QuestionViewController.m in Sources */,
 				AA95ACF01BA65206009DD621 /* PostDetailMsg.m in Sources */,
-				AA6B34D51BA3DE9A006A5741 /* TBXML.m in Sources */,
 				AA7C661C1BA2C84A0031774E /* AppDelegate.m in Sources */,
 				AA7BE7BE1BA4FEDB00391D7C /* PushViews.m in Sources */,
 				AA7BE7C21BA504AB00391D7C /* MyUITabBarController.m in Sources */,
@@ -581,11 +547,9 @@
 				AA3B214D1BA30737002856E0 /* prefix_define.h in Sources */,
 				AA3B21511BA308FC002856E0 /* InfoViewController.m in Sources */,
 				AA7BE7D11BA5225C00391D7C /* BlogDetail.m in Sources */,
-				AA6B34D41BA3DE9A006A5741 /* TBXML+HTTP.m in Sources */,
 				AA6B34DD1BA3F863006A5741 /* MsgDetail.m in Sources */,
 				AAB61B521BA5A2B9000C68D0 /* QuestionCell.m in Sources */,
 				AAB61B551BA5A4E7000C68D0 /* QuestionMsg.m in Sources */,
-				AA6B34D31BA3DE9A006A5741 /* TBXML+Compression.m in Sources */,
 				AA6B34D91BA3E36C006A5741 /* XMLParser.m in Sources */,
 				AA7C66191BA2C84A0031774E /* main.m in Sources */,
 				AAB61B4F1BA56C0F000C68D0 /* BlogDetailMsg.m in Sources */,

@@ -7,75 +7,125 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01D96F9EED80F691EBFE3FA0BEA0BDB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F9CAE2F306DC559C51B2B098DDCE33 /* Foundation.framework */; };
-		2A416434B169A082AD5813D1AE19EE39 /* AsyncImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BE80A76A70FA6C72951461C6CBD6CE /* AsyncImageView-dummy.m */; };
-		2B2B106D247206DF82B2B8342AA9EC70 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8510B0EE3D77826966E5D60A69EB45A /* Pods-dummy.m */; };
-		558D9F7BD9BDA01569EDB41055CBC7F6 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A28C7BA8B67CE6C444898E00D1C2E0AA /* AsyncImageView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BA0AC31BDE0624017681823FF79E9B7B /* AsyncImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EDE84B5BEAF46375CF8B35E4D30E2487 /* AsyncImageView.h */; };
-		C2AB46E4C702DD9F7BA5C486C37859D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F9CAE2F306DC559C51B2B098DDCE33 /* Foundation.framework */; };
+		08B54184C7BC51196F38FB6C54979A4C /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A9587F1FF3EF9DF905F320215FDBC /* AsyncImageView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		09513AE00F32A2CB75F0BAFDCF2A3C53 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 824DCAEFEC27D5E8DA9483E29C03423E /* TBXML+Compression.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0C6B1835F3FA1D4250E8C52309F4433E /* TBXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E199FFD598F412002A52CFE49BD20AC /* TBXML-dummy.m */; };
+		49321ACE308B98FE08352FBD5AE91E9E /* AsyncImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5032647E29AEF8ECA44EE1AEF7E1E0 /* AsyncImageView-dummy.m */; };
+		6735873167C86A7DE79EA95D68DF4E79 /* TBXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A2A93B4F8E53D867747FAC75827EA2C /* TBXML.h */; };
+		6E2878E9AEF11DFD4D33FD6592CE772A /* AsyncImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = E55E36C0C4EDC874B3FB0B40206B3062 /* AsyncImageView.h */; };
+		7211D57B93CBE91E710B9AC9B1B17FDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2506B3618EA80A5823DED2E9FFCA596F /* Foundation.framework */; };
+		73F76D6A1B080AEB19AFFBCE318E8385 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2506B3618EA80A5823DED2E9FFCA596F /* Foundation.framework */; };
+		A77BFEF2FBE795FF522329668B9A1941 /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E204F2C1C59D9E46662F9CA830D6C492 /* TBXML+HTTP.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A8D96F711769A51D4D948626AFF6A944 /* TBXML+HTTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D36D60A9A5C532232B16079C1438113 /* TBXML+HTTP.h */; };
+		C42DCF547192176717A1E3DDFAD727FA /* TBXML+Compression.h in Headers */ = {isa = PBXBuildFile; fileRef = B602EA45AB57659B527ED93FEFE1C84D /* TBXML+Compression.h */; };
+		C67B827E67D9AEA9934043654FC2C982 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5459C7746B4BAC258B9E2B5626CF3 /* Pods-dummy.m */; };
+		C81CB928411EBCD4C71CDD0C5B6E2267 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = C21C8055026E35451AD615D619BB2403 /* TBXML.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FF892867540E44BB231A7113C7EC31D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2506B3618EA80A5823DED2E9FFCA596F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		803A6E524A60A997BDF048598F8BEA35 /* PBXContainerItemProxy */ = {
+		9F02FE6EB1C1226CD4FD44BC12169C8B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E1EE3088F2037B2FFD4D7EF6E3EAACB5;
+			remoteGlobalIDString = 869911D482DE6745D8B281C9763544C5;
 			remoteInfo = AsyncImageView;
+		};
+		B4233EEAED62D39CEDCC48A67C272688 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E9CBCABB0BBEDCB7AE1F47BA540AE13;
+			remoteInfo = TBXML;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08F9CAE2F306DC559C51B2B098DDCE33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		002EF7E2A98E8B9C4E0B2A93C6ED1D89 /* libAsyncImageView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAsyncImageView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E8DB7EAD5FA23D216E684665C62EA50 /* AsyncImageView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AsyncImageView-Private.xcconfig"; sourceTree = "<group>"; };
 		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1FBF4EA4C67130F0BD924FE30EF6AEE3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F9B2EFD70A944AEF49FDC358392B188 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		4F08D988295B5E0D7347A66EA2CE7B51 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		1B1E68420667A6A9E6BD2CBE9896B0D0 /* TBXML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TBXML-prefix.pch"; sourceTree = "<group>"; };
+		2506B3618EA80A5823DED2E9FFCA596F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3929FF5429E54EF74C8CB3281A4BADD7 /* AsyncImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsyncImageView-prefix.pch"; sourceTree = "<group>"; };
+		4EC5459C7746B4BAC258B9E2B5626CF3 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
 		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		8FB0E4D88DEA13E1762A90D8EF899E0A /* libAsyncImageView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAsyncImageView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A28C7BA8B67CE6C444898E00D1C2E0AA /* AsyncImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AsyncImageView.m; path = AsyncImageView/AsyncImageView.m; sourceTree = "<group>"; };
-		AF83C2121FF2C0C4EB692497F5CBA957 /* AsyncImageView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AsyncImageView-Private.xcconfig"; sourceTree = "<group>"; };
-		B4BE80A76A70FA6C72951461C6CBD6CE /* AsyncImageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AsyncImageView-dummy.m"; sourceTree = "<group>"; };
-		B8510B0EE3D77826966E5D60A69EB45A /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		7945D64AACD3551B058DA78BD67ED9ED /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		7E199FFD598F412002A52CFE49BD20AC /* TBXML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TBXML-dummy.m"; sourceTree = "<group>"; };
+		807791DE3FEE8EEC5A992C40E81BF1CB /* AsyncImageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AsyncImageView.xcconfig; sourceTree = "<group>"; };
+		813FED752D5FB3E9FC92CB291E258192 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		824DCAEFEC27D5E8DA9483E29C03423E /* TBXML+Compression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TBXML+Compression.m"; path = "TBXML-Code/TBXML+Compression.m"; sourceTree = "<group>"; };
+		8A2A93B4F8E53D867747FAC75827EA2C /* TBXML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TBXML.h; path = "TBXML-Headers/TBXML.h"; sourceTree = "<group>"; };
+		8D36D60A9A5C532232B16079C1438113 /* TBXML+HTTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TBXML+HTTP.h"; path = "TBXML-Headers/TBXML+HTTP.h"; sourceTree = "<group>"; };
+		A497EFB6DF8BDEBC9B79F7EDE0BAA2E2 /* TBXML-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TBXML-Private.xcconfig"; sourceTree = "<group>"; };
+		B602EA45AB57659B527ED93FEFE1C84D /* TBXML+Compression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TBXML+Compression.h"; path = "TBXML-Headers/TBXML+Compression.h"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		C6D4B42DFBE330555E5CA3F15EC8FC5C /* AsyncImageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AsyncImageView.xcconfig; sourceTree = "<group>"; };
-		EDE84B5BEAF46375CF8B35E4D30E2487 /* AsyncImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncImageView.h; path = AsyncImageView/AsyncImageView.h; sourceTree = "<group>"; };
-		FCBA48F1350E55FBF647D1DBCD6EA404 /* AsyncImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsyncImageView-prefix.pch"; sourceTree = "<group>"; };
+		C0B611298A4A4A1CBC502B9183813406 /* TBXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TBXML.xcconfig; sourceTree = "<group>"; };
+		C21C8055026E35451AD615D619BB2403 /* TBXML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TBXML.m; path = "TBXML-Code/TBXML.m"; sourceTree = "<group>"; };
+		C42A9587F1FF3EF9DF905F320215FDBC /* AsyncImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AsyncImageView.m; path = AsyncImageView/AsyncImageView.m; sourceTree = "<group>"; };
+		D42B4D8FFCD90788E775B3C764A754EA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E204F2C1C59D9E46662F9CA830D6C492 /* TBXML+HTTP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TBXML+HTTP.m"; path = "TBXML-Code/TBXML+HTTP.m"; sourceTree = "<group>"; };
+		E55E36C0C4EDC874B3FB0B40206B3062 /* AsyncImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncImageView.h; path = AsyncImageView/AsyncImageView.h; sourceTree = "<group>"; };
+		EE5032647E29AEF8ECA44EE1AEF7E1E0 /* AsyncImageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AsyncImageView-dummy.m"; sourceTree = "<group>"; };
+		F5F9EC6FA47F47F7D7131C6F5F335959 /* libTBXML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTBXML.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		49AF91D976B9D5EF939D3E7B9CD3FFC9 /* Frameworks */ = {
+		459BE331ED59EB76E78402CC1040451D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2AB46E4C702DD9F7BA5C486C37859D5 /* Foundation.framework in Frameworks */,
+				FF892867540E44BB231A7113C7EC31D8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A2B32EDC29DD7767282944884C692ED /* Frameworks */ = {
+		7C6B21686AF3BF4600346BEAA1E2DC9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01D96F9EED80F691EBFE3FA0BEA0BDB9 /* Foundation.framework in Frameworks */,
+				7211D57B93CBE91E710B9AC9B1B17FDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E1CE654A9F714B84484C1E0C09D82E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F76D6A1B080AEB19AFFBCE318E8385 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		38423E6D80E967D8FB8A5D0D8F9F1CCF /* Pods */ = {
+		0845D7A1E55A8722D452FC94D2A2A8F5 /* TBXML */ = {
 			isa = PBXGroup;
 			children = (
-				FA447AE13DEA5ACAA64E39119CA4A5B4 /* AsyncImageView */,
+				8A2A93B4F8E53D867747FAC75827EA2C /* TBXML.h */,
+				C21C8055026E35451AD615D619BB2403 /* TBXML.m */,
+				B602EA45AB57659B527ED93FEFE1C84D /* TBXML+Compression.h */,
+				824DCAEFEC27D5E8DA9483E29C03423E /* TBXML+Compression.m */,
+				8D36D60A9A5C532232B16079C1438113 /* TBXML+HTTP.h */,
+				E204F2C1C59D9E46662F9CA830D6C492 /* TBXML+HTTP.m */,
+				93B7DE0F3DFEE9B6C4445C7FAD6FADB1 /* Support Files */,
 			);
-			name = Pods;
+			path = TBXML;
+			sourceTree = "<group>";
+		};
+		0E82C7BFABB917481D59BE1A0B76FD23 /* AsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				E55E36C0C4EDC874B3FB0B40206B3062 /* AsyncImageView.h */,
+				C42A9587F1FF3EF9DF905F320215FDBC /* AsyncImageView.m */,
+				9994496A5F66442057C31A1054604809 /* Support Files */,
+			);
+			path = AsyncImageView;
 			sourceTree = "<group>";
 		};
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				08F9CAE2F306DC559C51B2B098DDCE33 /* Foundation.framework */,
+				2506B3618EA80A5823DED2E9FFCA596F /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -85,10 +135,22 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				38423E6D80E967D8FB8A5D0D8F9F1CCF /* Pods */,
+				A1D540FA103F7149BA8EB71FA82516D8 /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		93B7DE0F3DFEE9B6C4445C7FAD6FADB1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0B611298A4A4A1CBC502B9183813406 /* TBXML.xcconfig */,
+				A497EFB6DF8BDEBC9B79F7EDE0BAA2E2 /* TBXML-Private.xcconfig */,
+				7E199FFD598F412002A52CFE49BD20AC /* TBXML-dummy.m */,
+				1B1E68420667A6A9E6BD2CBE9896B0D0 /* TBXML-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TBXML";
 			sourceTree = "<group>";
 		};
 		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
@@ -96,13 +158,34 @@
 			children = (
 				15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */,
 				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
-				B8510B0EE3D77826966E5D60A69EB45A /* Pods-dummy.m */,
+				4EC5459C7746B4BAC258B9E2B5626CF3 /* Pods-dummy.m */,
 				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
-				4F08D988295B5E0D7347A66EA2CE7B51 /* Pods.debug.xcconfig */,
-				3F9B2EFD70A944AEF49FDC358392B188 /* Pods.release.xcconfig */,
+				813FED752D5FB3E9FC92CB291E258192 /* Pods.debug.xcconfig */,
+				7945D64AACD3551B058DA78BD67ED9ED /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		9994496A5F66442057C31A1054604809 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				807791DE3FEE8EEC5A992C40E81BF1CB /* AsyncImageView.xcconfig */,
+				0E8DB7EAD5FA23D216E684665C62EA50 /* AsyncImageView-Private.xcconfig */,
+				EE5032647E29AEF8ECA44EE1AEF7E1E0 /* AsyncImageView-dummy.m */,
+				3929FF5429E54EF74C8CB3281A4BADD7 /* AsyncImageView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AsyncImageView";
+			sourceTree = "<group>";
+		};
+		A1D540FA103F7149BA8EB71FA82516D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E82C7BFABB917481D59BE1A0B76FD23 /* AsyncImageView */,
+				0845D7A1E55A8722D452FC94D2A2A8F5 /* TBXML */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -116,22 +199,11 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FB0E4D88DEA13E1762A90D8EF899E0A /* libAsyncImageView.a */,
-				1FBF4EA4C67130F0BD924FE30EF6AEE3 /* libPods.a */,
+				002EF7E2A98E8B9C4E0B2A93C6ED1D89 /* libAsyncImageView.a */,
+				D42B4D8FFCD90788E775B3C764A754EA /* libPods.a */,
+				F5F9EC6FA47F47F7D7131C6F5F335959 /* libTBXML.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CEAA9C96BF5F95EE1B298F1D27FA16DF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C6D4B42DFBE330555E5CA3F15EC8FC5C /* AsyncImageView.xcconfig */,
-				AF83C2121FF2C0C4EB692497F5CBA957 /* AsyncImageView-Private.xcconfig */,
-				B4BE80A76A70FA6C72951461C6CBD6CE /* AsyncImageView-dummy.m */,
-				FCBA48F1350E55FBF647D1DBCD6EA404 /* AsyncImageView-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AsyncImageView";
 			sourceTree = "<group>";
 		};
 		D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */ = {
@@ -142,54 +214,72 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FA447AE13DEA5ACAA64E39119CA4A5B4 /* AsyncImageView */ = {
-			isa = PBXGroup;
-			children = (
-				EDE84B5BEAF46375CF8B35E4D30E2487 /* AsyncImageView.h */,
-				A28C7BA8B67CE6C444898E00D1C2E0AA /* AsyncImageView.m */,
-				CEAA9C96BF5F95EE1B298F1D27FA16DF /* Support Files */,
-			);
-			path = AsyncImageView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D0BF04CFFA4EFC64CAD77A34BC8BCD6B /* Headers */ = {
+		5C6B9E36E2EB94331258864C43159BCB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA0AC31BDE0624017681823FF79E9B7B /* AsyncImageView.h in Headers */,
+				6E2878E9AEF11DFD4D33FD6592CE772A /* AsyncImageView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D956979AA2305321C0C6530B3614CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42DCF547192176717A1E3DDFAD727FA /* TBXML+Compression.h in Headers */,
+				A8D96F711769A51D4D948626AFF6A944 /* TBXML+HTTP.h in Headers */,
+				6735873167C86A7DE79EA95D68DF4E79 /* TBXML.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		390C4024E9DDADD9E663FE354DA3780B /* Pods */ = {
+		1D68C8E892B1D207DD6716286D476775 /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CFACAFF354F659CC61EBADF6C905BA59 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 2FD90222156EEC3716F7A18C647478C1 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				76BE6263EC55D88B649D30DC0E06E205 /* Sources */,
-				49AF91D976B9D5EF939D3E7B9CD3FFC9 /* Frameworks */,
+				F992CE531E0049ECF48B90E9391FA304 /* Sources */,
+				459BE331ED59EB76E78402CC1040451D /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EB19BBE7DB3B1CAFF4277D1316499CB4 /* PBXTargetDependency */,
+				0E262C07B03167ABD98A836249DB3743 /* PBXTargetDependency */,
+				66DDA2FC44AA4BFDDE1BF75FB91707C6 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 1FBF4EA4C67130F0BD924FE30EF6AEE3 /* libPods.a */;
+			productReference = D42B4D8FFCD90788E775B3C764A754EA /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		E1EE3088F2037B2FFD4D7EF6E3EAACB5 /* AsyncImageView */ = {
+		2E9CBCABB0BBEDCB7AE1F47BA540AE13 /* TBXML */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12B5268F1EF26D7ABBA8A74A80F83FE8 /* Build configuration list for PBXNativeTarget "AsyncImageView" */;
+			buildConfigurationList = 1D87AEFBA3C6FBDB785FFA6A4E0E9C81 /* Build configuration list for PBXNativeTarget "TBXML" */;
 			buildPhases = (
-				01852E06FF26D98A74B9012B4FDDA8E7 /* Sources */,
-				8A2B32EDC29DD7767282944884C692ED /* Frameworks */,
-				D0BF04CFFA4EFC64CAD77A34BC8BCD6B /* Headers */,
+				E66CAF27467884912B80232AA4FC2395 /* Sources */,
+				7C6B21686AF3BF4600346BEAA1E2DC9E /* Frameworks */,
+				B7D956979AA2305321C0C6530B3614CA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBXML;
+			productName = TBXML;
+			productReference = F5F9EC6FA47F47F7D7131C6F5F335959 /* libTBXML.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		869911D482DE6745D8B281C9763544C5 /* AsyncImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0371E6E8629EF9B3039B22371D4F630 /* Build configuration list for PBXNativeTarget "AsyncImageView" */;
+			buildPhases = (
+				493BE626F0DBC94C30531F2946B37D55 /* Sources */,
+				89E1CE654A9F714B84484C1E0C09D82E /* Frameworks */,
+				5C6B9E36E2EB94331258864C43159BCB /* Headers */,
 			);
 			buildRules = (
 			);
@@ -197,7 +287,7 @@
 			);
 			name = AsyncImageView;
 			productName = AsyncImageView;
-			productReference = 8FB0E4D88DEA13E1762A90D8EF899E0A /* libAsyncImageView.a */;
+			productReference = 002EF7E2A98E8B9C4E0B2A93C6ED1D89 /* libAsyncImageView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -221,45 +311,63 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1EE3088F2037B2FFD4D7EF6E3EAACB5 /* AsyncImageView */,
-				390C4024E9DDADD9E663FE354DA3780B /* Pods */,
+				869911D482DE6745D8B281C9763544C5 /* AsyncImageView */,
+				1D68C8E892B1D207DD6716286D476775 /* Pods */,
+				2E9CBCABB0BBEDCB7AE1F47BA540AE13 /* TBXML */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		01852E06FF26D98A74B9012B4FDDA8E7 /* Sources */ = {
+		493BE626F0DBC94C30531F2946B37D55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A416434B169A082AD5813D1AE19EE39 /* AsyncImageView-dummy.m in Sources */,
-				558D9F7BD9BDA01569EDB41055CBC7F6 /* AsyncImageView.m in Sources */,
+				49321ACE308B98FE08352FBD5AE91E9E /* AsyncImageView-dummy.m in Sources */,
+				08B54184C7BC51196F38FB6C54979A4C /* AsyncImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76BE6263EC55D88B649D30DC0E06E205 /* Sources */ = {
+		E66CAF27467884912B80232AA4FC2395 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2B106D247206DF82B2B8342AA9EC70 /* Pods-dummy.m in Sources */,
+				09513AE00F32A2CB75F0BAFDCF2A3C53 /* TBXML+Compression.m in Sources */,
+				A77BFEF2FBE795FF522329668B9A1941 /* TBXML+HTTP.m in Sources */,
+				0C6B1835F3FA1D4250E8C52309F4433E /* TBXML-dummy.m in Sources */,
+				C81CB928411EBCD4C71CDD0C5B6E2267 /* TBXML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F992CE531E0049ECF48B90E9391FA304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C67B827E67D9AEA9934043654FC2C982 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EB19BBE7DB3B1CAFF4277D1316499CB4 /* PBXTargetDependency */ = {
+		0E262C07B03167ABD98A836249DB3743 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AsyncImageView;
-			target = E1EE3088F2037B2FFD4D7EF6E3EAACB5 /* AsyncImageView */;
-			targetProxy = 803A6E524A60A997BDF048598F8BEA35 /* PBXContainerItemProxy */;
+			target = 869911D482DE6745D8B281C9763544C5 /* AsyncImageView */;
+			targetProxy = 9F02FE6EB1C1226CD4FD44BC12169C8B /* PBXContainerItemProxy */;
+		};
+		66DDA2FC44AA4BFDDE1BF75FB91707C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TBXML;
+			target = 2E9CBCABB0BBEDCB7AE1F47BA540AE13 /* TBXML */;
+			targetProxy = B4233EEAED62D39CEDCC48A67C272688 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		42E122EDAAD5A13AF6F09254179055C9 /* Debug */ = {
+		5036571477BEF8F7A2B141EF16905549 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF83C2121FF2C0C4EB692497F5CBA957 /* AsyncImageView-Private.xcconfig */;
+			baseConfigurationReference = 0E8DB7EAD5FA23D216E684665C62EA50 /* AsyncImageView-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/AsyncImageView/AsyncImageView-prefix.pch";
@@ -272,38 +380,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
-		};
-		4411D875B4BC637FC3C12E330E8CFEC5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F08D988295B5E0D7347A66EA2CE7B51 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		4713D0C1A15075FFE7DE44C8A68831E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F9B2EFD70A944AEF49FDC358392B188 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 		511103F7F15A7E8F83B268EA03462CAB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -338,6 +414,38 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		9021F412CF2FAB969737E28CE6AA326D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7945D64AACD3551B058DA78BD67ED9ED /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		95E4F1CACF87B502C357E4C0FE9FBC60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 813FED752D5FB3E9FC92CB291E258192 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -378,9 +486,9 @@
 			};
 			name = Debug;
 		};
-		BECA48CF5CC2BE29A750CB7730469F1B /* Release */ = {
+		ACD8DF70D7553E4D81FBA8489BD930C5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF83C2121FF2C0C4EB692497F5CBA957 /* AsyncImageView-Private.xcconfig */;
+			baseConfigurationReference = 0E8DB7EAD5FA23D216E684665C62EA50 /* AsyncImageView-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/AsyncImageView/AsyncImageView-prefix.pch";
@@ -394,14 +502,46 @@
 			};
 			name = Release;
 		};
+		C2D93E0BF81B1D6211E3673D8CECD306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A497EFB6DF8BDEBC9B79F7EDE0BAA2E2 /* TBXML-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TBXML/TBXML-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DB20416C3D05348EE45898E29BC0C19C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A497EFB6DF8BDEBC9B79F7EDE0BAA2E2 /* TBXML-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TBXML/TBXML-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		12B5268F1EF26D7ABBA8A74A80F83FE8 /* Build configuration list for PBXNativeTarget "AsyncImageView" */ = {
+		1D87AEFBA3C6FBDB785FFA6A4E0E9C81 /* Build configuration list for PBXNativeTarget "TBXML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				42E122EDAAD5A13AF6F09254179055C9 /* Debug */,
-				BECA48CF5CC2BE29A750CB7730469F1B /* Release */,
+				DB20416C3D05348EE45898E29BC0C19C /* Debug */,
+				C2D93E0BF81B1D6211E3673D8CECD306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -415,11 +555,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CFACAFF354F659CC61EBADF6C905BA59 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		2FD90222156EEC3716F7A18C647478C1 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4411D875B4BC637FC3C12E330E8CFEC5 /* Debug */,
-				4713D0C1A15075FFE7DE44C8A68831E5 /* Release */,
+				95E4F1CACF87B502C357E4C0FE9FBC60 /* Debug */,
+				9021F412CF2FAB969737E28CE6AA326D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0371E6E8629EF9B3039B22371D4F630 /* Build configuration list for PBXNativeTarget "AsyncImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5036571477BEF8F7A2B141EF16905549 /* Debug */,
+				ACD8DF70D7553E4D81FBA8489BD930C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

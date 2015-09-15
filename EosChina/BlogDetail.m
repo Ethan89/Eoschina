@@ -1,4 +1,5 @@
 #import "BlogDetail.h"
+#import "TBXML.h"
 
 @implementation BlogDetail
 
@@ -52,7 +53,8 @@
     msg = [[NSString alloc] initWithData:blog_data encoding:NSUTF8StringEncoding];
     //NSLog(@"%@", msg);
     
-    TBXML *tbxml = [TBXML newTBXMLWithXMLString:msg error:nil];
+    TBXML *tbxml = [TBXML tbxmlWithXMLString:msg error:nil];
+    
     
     
     TBXMLElement *_id = nil;
