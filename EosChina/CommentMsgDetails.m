@@ -18,8 +18,8 @@
 @synthesize  cPubDate;
 @synthesize  cAppClient;
 @synthesize  cRefers;
-@synthesize refrenceArray;
-@synthesize height;
+@synthesize  refrenceArray;
+@synthesize  height;
 
 
 - (id) initWithContent:(NSString *)nId andPortrait:(NSString *)nPortrait andAuthor:(NSString *)nAuthor andAuthorid:(NSString *)nauthorId andContent:(NSString *)nContent andPubDate:(NSString *)npubDate andAppClent:(NSString *)nAppClent andRefers:(NSString *)nRefers

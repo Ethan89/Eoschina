@@ -13,6 +13,7 @@
 #import "MsgDetail.h"
 #import "PushViews.h"
 
+//@interface InfoViewController ()
 @interface InfoViewController ()
 
 @end
@@ -40,6 +41,11 @@
     //self.infoTableView.contentInset = UIEdgeInsetsMake(0, 0, 50, 0);
     newsArray = [[NSMutableArray alloc] initWithCapacity:10];
     
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
     [self loadContent];
 }
 
@@ -47,6 +53,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 - (IBAction)categorySender:(id)sender {
     UISegmentedControl* segmentedControl = (UISegmentedControl*)sender;
     NSInteger selectedSegment = segmentedControl.selectedSegmentIndex;
@@ -122,7 +129,7 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     
     NSLog(@"请求完成");
-    //NSLog(@"**%@**", _datas);
+    
     NSString *msg;
     msg = [[NSString alloc] initWithData:_datas encoding:NSUTF8StringEncoding];
     //NSLog(@"%@", msg);
@@ -173,13 +180,13 @@
     
     static NSString *tag = @"NewCell";
     
-    MsgCell *cell = [tableView dequeueReusableCellWithIdentifier:tag];
+    MsgCell *cell = [infoTableView dequeueReusableCellWithIdentifier:tag];
     MsgDetail *news = [newsArray objectAtIndex:[indexPath row]];
-    
     
     cell.title.text  = news.title;
     cell.author.text = news.author;
     cell.date.text   = news.date;
+     
     return cell;
 }
 

@@ -29,7 +29,16 @@
     
     isLoadOver = NO;
     
+    self.commentTableView.dataSource = self;
+    self.commentTableView.delegate   = self;
+    
     commentArray = [[NSMutableArray alloc] initWithCapacity:2];
+    
+    if([[[UIDevice currentDevice]systemVersion]floatValue]>=7.0)
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
 }
 
 - (void)viewDidLoad {
@@ -41,7 +50,14 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     //self.commentTableView.frame = CGRectMake(0,50,self.view.frame.size.width,self.view.frame.size.height-50);
-    self.commentTableView.contentInset = UIEdgeInsetsMake(65, 0, 50, 0);
+    //self.commentTableView.contentInset = UIEdgeInsetsMake(65, 0, 50, 0);
+    
+    /*
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+     */
     //NSLog(@"tableview frame: %@", NSStringFromCGRect([self.commentTableView frame]));
     //NSLog(@"view frame: %@", NSStringFromCGRect([self.view frame]));
 }
@@ -73,6 +89,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
+    NSLog(@"numberOfRowsInSection : %d", [commentArray count]);
     return [commentArray count];
 }
 
@@ -106,14 +123,6 @@
         
         NSString *str = nil;
         NSLog(@"#### newsCategory: %d",newsCategory);
-        /*
-        if(newsCategory == 1)
-        {
-            str = [NSString stringWithFormat:@"%@catalog=%d&id=%@&pageIndex=%d&pageSize=%d",comments_detail,self.newsCategory,ids,count,20];
-        }else if (newsCategory == 2) {
-            str = [NSString stringWithFormat:@"%@?id=%d&pageIndex=%d&pageSize=%d", api_blogcomment_list, self.parentID, pageIndex, 20];
-        }
-         */
         
         if(newsCategory ==5)
         {
@@ -154,6 +163,7 @@
     
     NSMutableArray *array = [XMLParser commentsDetailParser:msg];
     [commentArray addObjectsFromArray:array];
+    //NSLog(@"array count : %d", [commentArray count]);
     [commentTableView reloadData];
 }
 

@@ -249,6 +249,8 @@
 				AA7BE7D91BA551D000391D7C /* CommentCells.m */,
 				AAB61B501BA5A2B9000C68D0 /* QuestionCell.h */,
 				AAB61B511BA5A2B9000C68D0 /* QuestionCell.m */,
+				AA6B34DE1BA41891006A5741 /* MsgCell.h */,
+				AA6B34DF1BA41891006A5741 /* MsgCell.m */,
 				AAB61B591BA5A90D000C68D0 /* QuestionViewController.h */,
 				AAB61B5A1BA5A90D000C68D0 /* QuestionViewController.m */,
 				AA95ACF11BA6528C009DD621 /* PostDetail.h */,
@@ -324,8 +326,6 @@
 				AA7C66251BA2C84A0031774E /* LaunchScreen.xib */,
 				AA7C66161BA2C84A0031774E /* Supporting Files */,
 				AA3B214C1BA30737002856E0 /* prefix_define.h */,
-				AA6B34DE1BA41891006A5741 /* MsgCell.h */,
-				AA6B34DF1BA41891006A5741 /* MsgCell.m */,
 				AA7BE7BF1BA5044700391D7C /* CustomProtocol.h */,
 			);
 			path = EosChina;

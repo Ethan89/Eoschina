@@ -15,7 +15,6 @@
 
 @property (strong,nonatomic) UIWebView *webView;
 
-//@property (strong, nonatomic) IBOutlet UIView *myView;
 @property int ids;
 @property int newsCategory;
 @property (nonatomic, strong) NSMutableData *blog_data;

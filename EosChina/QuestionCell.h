@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *answerCount;
 @property (weak, nonatomic) IBOutlet UILabel *authorLabel;
 
+
 @property int tag;
 
 - (void)setContent:(QuestionMsg *)msg;

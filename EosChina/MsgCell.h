@@ -14,5 +14,4 @@
 @property (weak, nonatomic) IBOutlet UILabel *author;
 @property (weak, nonatomic) IBOutlet UILabel *date;
 
-
 @end

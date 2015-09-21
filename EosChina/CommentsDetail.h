@@ -12,13 +12,14 @@
 #import "CommentCells.h"
 #import "CommentMsgDetails.h"
 
-@interface CommentsDetail : UITableViewController <UITableViewDataSource, UITableViewDelegate, NSURLConnectionDataDelegate>
+@interface CommentsDetail : UIViewController <UITableViewDataSource, UITableViewDelegate, NSURLConnectionDataDelegate>
 
 @property (nonatomic,weak) MsgDetail *msgDetail;
-@property (strong, nonatomic) IBOutlet UITableView *commentTableView;
+@property (weak, nonatomic) IBOutlet UITableView *commentTableView;
 
 @property (nonatomic, strong) NSMutableData *commentData;
 @property (nonatomic, strong) NSMutableArray *commentArray;
+
 @property int pageIndex;
 @property int newsCategory;
 @property NSString *ids;
